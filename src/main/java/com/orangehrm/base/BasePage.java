@@ -18,7 +18,7 @@ import java.util.concurrent.locks.LockSupport;
 public class BasePage {
 
     protected static Properties prop; //define this variable as static or else BasicTest2 will fail
-    protected WebDriver driver;
+    protected static WebDriver driver;
 
 
     @BeforeSuite
@@ -52,7 +52,7 @@ public class BasePage {
 
     private void configBrowser(){
         //Set timeout and size
-        int seconds = Integer.parseInt(prop.getProperty("implicitwait"));
+        int seconds = Integer.parseInt(prop.getProperty("implicit.wait"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
         driver.manage().window().maximize();
         try {
@@ -82,6 +82,14 @@ public class BasePage {
 
     public void staticWait(int seconds){
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
+    }
+
+    public WebDriver getDriver(){
+        return this.driver;
+    }
+
+    public void setDriver(WebDriver webDriver){
+        this.driver = driver;
     }
 
 
