@@ -85,11 +85,15 @@ public class BasePage {
     }
 
     public WebDriver getDriver(){
-        return this.driver;
+        return driver;
     }
 
     public void setDriver(WebDriver webDriver){
         this.driver = driver;
+    }
+
+    public static Properties getProp(){
+        return prop;
     }
 
 

@@ -10,14 +10,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class ActionDriver extends BasePage {
+import com.orangehrm.base.BasePage;
 
-    private static WebDriver driver;
+public class ActionDriver{
+
+    private WebDriver driver;
     private WebDriverWait wait;
 
-    public ActionDriver() {
-        driver = getDriver();
-        int explicitWait = Integer.parseInt(prop.getProperty("explicit.wait"));
+    public ActionDriver(WebDriver driver) {
+        this.driver = driver;
+        int explicitWait = Integer.parseInt(BasePage.getProp().getProperty("explicitwait"));
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWait)); //configuring wait object, The timer will start when I use until method, Here
         //the max wait time is 10s. This is of no use without the until method
     }
@@ -38,9 +40,28 @@ public class ActionDriver extends BasePage {
         return driver.findElement(by).getText();
     }
 
-    public String compareText(By by){
-        waitForElementToBeVisible(by);
-        return driver.findElement(by).getText();
+    public boolean compareText(By by, String expectedText){
+        try {
+            waitForElementToBeVisible(by);
+            String actualText=driver.findElement(by).getText();
+            return actualText.equals(expectedText);
+        }
+        catch (Exception e){
+            System.out.println("Unable to compare texts: "+e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean isDisplayed(By by){
+       try {
+           waitForElementToBeVisible(by);
+           return driver.findElement(by).isDisplayed();
+       }
+       catch (Exception e)
+       {
+           System.out.println("Unable to check whether the element is displayed: "+e.getMessage());
+           return false;
+       }
     }
 
     public void waitForElementToBeClickable(By by) {
