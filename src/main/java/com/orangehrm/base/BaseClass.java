@@ -9,13 +9,12 @@ import org.testng.annotations.BeforeSuite;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.sql.Time;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.LockSupport;
 
-public class BasePage {
+public class BaseClass {
 
     protected static Properties prop; //define this variable as static or else BasicTest2 will fail
     protected static WebDriver driver;
@@ -84,7 +83,7 @@ public class BasePage {
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }
 
-    public WebDriver getDriver(){
+    public static WebDriver getDriver(){
         return driver;
     }
 

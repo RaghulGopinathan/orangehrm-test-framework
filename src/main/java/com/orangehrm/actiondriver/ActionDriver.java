@@ -1,6 +1,6 @@
 package com.orangehrm.actiondriver;
 
-import com.orangehrm.base.BasePage;
+import com.orangehrm.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,8 +10,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import com.orangehrm.base.BasePage;
-
 public class ActionDriver{
 
     private WebDriver driver;
@@ -19,7 +17,8 @@ public class ActionDriver{
 
     public ActionDriver(WebDriver driver) {
         this.driver = driver;
-        int explicitWait = Integer.parseInt(BasePage.getProp().getProperty("explicitwait"));
+
+        int explicitWait = Integer.parseInt(BaseClass.getProp().getProperty("explicit.wait"));
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWait)); //configuring wait object, The timer will start when I use until method, Here
         //the max wait time is 10s. This is of no use without the until method
     }
