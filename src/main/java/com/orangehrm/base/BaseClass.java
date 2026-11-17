@@ -18,8 +18,8 @@ import java.util.concurrent.locks.LockSupport;
 public class BaseClass {
 
     protected static Properties prop; //define this variable as static or else BasicTest2 will fail
-    private static WebDriver driver;
-    private static ActionDriver actionDriver;
+    private static ThreadLocal<WebDriver> tDriver = new ThreadLocal<>();
+    private static ThreadLocal<ActionDriver> tActionDriver = new ThreadLocal<>();
 
 
     @BeforeSuite
@@ -43,37 +43,37 @@ public class BaseClass {
 
         if (browser.equalsIgnoreCase("chrome"))
         {
-            driver = new ChromeDriver();
+            tDriver.set(new ChromeDriver());
         }
         else
         {
-            driver = new EdgeDriver();
+            tDriver.set(new EdgeDriver());
         }
 
-        actionDriver = new ActionDriver(driver);
+        setActionDriver(new ActionDriver(getDriver()));
     }
 
     private void configBrowser(){
         //Set timeout and size
         int seconds = Integer.parseInt(prop.getProperty("implicit.wait"));
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
-        driver.manage().window().maximize();
+        getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(seconds));
+        getDriver().manage().window().maximize();
         try {
-            driver.get(prop.getProperty("url"));
+            getDriver().get(prop.getProperty("url"));
         }
         catch (Exception e)
         {
             System.out.println(e.getMessage());
         }
-        actionDriver.waitForPageLoad(5);
+        getActionDriver().waitForPageLoad(5);
     }
 
     @AfterMethod
     public void teardown(){
-        if (driver!=null)
+        if (getDriver()!=null)
         {
             try {
-                driver.quit();
+                getDriver().quit();
             }
             catch (Exception e)
             {
@@ -87,18 +87,29 @@ public class BaseClass {
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }
 
-    public static WebDriver getDriver(){
-        return driver;
-    }
-
-    public void setDriver(WebDriver webDriver){
-        this.driver = driver;
-    }
+//    public static WebDriver getDriver(){
+//        return driver;
+//    }
+//
+//    public void setDriver(WebDriver webDriver){
+//        this.driver = driver;
+//    }
 
     public static ActionDriver getActionDriver(){
-        return actionDriver;
+        return tActionDriver.get();
     }
 
+    public static void setActionDriver(ActionDriver actionDriver){
+        tActionDriver.set(actionDriver);
+    }
+
+    public static void setDriver(WebDriver driver){
+        tDriver.set(driver);
+    }
+
+    public static WebDriver getDriver(){
+        return tDriver.get();
+    }
     public static Properties getProp(){
         return prop;
     }

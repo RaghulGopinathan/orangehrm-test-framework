@@ -25,18 +25,15 @@ public class LoginPage {
     }
 
     //Actions involved in this page
-    public boolean header(String expectedText){
-        System.out.println("Verifying the header field..");
-        return actionDriver.compareText(loginHeaderField,expectedText);
-    }
-
     public void login(String username, String password){
+        System.out.println("Thread Id: "+Thread.currentThread().threadId());
         actionDriver.enterText(usernameField,username);
         actionDriver.enterText(passwordField,password);
         actionDriver.click(loginBtnField);
     }
 
     public boolean invalidLogin(String username, String password){
+        System.out.println("Thread Id: "+Thread.currentThread().threadId());
         login(username,password);
         return actionDriver.compareText(errorMessageField,"Invalid credentials");
     }
