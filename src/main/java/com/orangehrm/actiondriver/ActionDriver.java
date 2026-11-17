@@ -65,7 +65,7 @@ public class ActionDriver{
 
     public void waitForElementToBeClickable(By by) {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(by)); //It waits maximum of 30 sec until the element becomes clickable else it throws timeout exception
+            wait.until(ExpectedConditions.elementToBeClickable(by)); //It waits maximum of 10 sec until the element becomes clickable else it throws timeout exception
         } catch (Exception e) {
             System.out.println("Unable to click the element: " + e.getMessage());
         }

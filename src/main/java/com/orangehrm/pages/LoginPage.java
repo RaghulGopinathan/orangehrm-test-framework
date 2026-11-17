@@ -1,6 +1,7 @@
 package com.orangehrm.pages;
 
 import com.orangehrm.actiondriver.ActionDriver;
+import com.orangehrm.base.BaseClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -15,10 +16,12 @@ public class LoginPage {
     private By usernameField = By.name("username");
     private By passwordField = By.name("password");
     private By loginBtnField = By.xpath("//button[@class='oxd-button oxd-button--medium oxd-button--main orangehrm-login-button']");
-    private By errorMessageField = By.xpath("p[text()='Invalid credentials']");
+    private By errorMessageField = By.xpath("//p[text()='Invalid credentials']");
 
     public LoginPage(){
-        this.actionDriver=new ActionDriver(driver);
+
+        this.driver = BaseClass.getDriver();
+        this.actionDriver=BaseClass.getActionDriver();
     }
 
     //Actions involved in this page

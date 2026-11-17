@@ -15,14 +15,14 @@ public class LoginPageTest extends BaseClass {
         loginPage = new LoginPage();
     }
 
-    @Test
+    @Test(priority = 1)
     public void verifyLoginTest(){
         loginPage.login(prop.getProperty("username"),prop.getProperty("password"));
     }
 
-    @Test
+    @Test(priority = 2)
     public void verifyInvalidLoginTest(){
-        boolean isInvalidLogin = loginPage.invalidLogin(prop.getProperty("username"),prop.getProperty("password"));
+        boolean isInvalidLogin = loginPage.invalidLogin(prop.getProperty("username"),prop.getProperty("password")+"1");
         Assert.assertTrue(isInvalidLogin,"Error message validated");
     }
 

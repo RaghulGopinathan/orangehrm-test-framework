@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class BasicTest extends BaseClass {
     @Test
     public void basicTest() {
-        String title = driver.getTitle();
+        String title = BaseClass.getDriver().getTitle();
         Assert.assertEquals(title,"OrangeHRM");
     }
 }

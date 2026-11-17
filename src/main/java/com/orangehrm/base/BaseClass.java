@@ -1,5 +1,6 @@
 package com.orangehrm.base;
 
+import com.orangehrm.actiondriver.ActionDriver;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,7 +18,8 @@ import java.util.concurrent.locks.LockSupport;
 public class BaseClass {
 
     protected static Properties prop; //define this variable as static or else BasicTest2 will fail
-    protected static WebDriver driver;
+    private static WebDriver driver;
+    private static ActionDriver actionDriver;
 
 
     @BeforeSuite
@@ -47,6 +49,8 @@ public class BaseClass {
         {
             driver = new EdgeDriver();
         }
+
+        actionDriver = new ActionDriver(driver);
     }
 
     private void configBrowser(){
@@ -61,7 +65,7 @@ public class BaseClass {
         {
             System.out.println(e.getMessage());
         }
-
+        actionDriver.waitForPageLoad(5);
     }
 
     @AfterMethod
@@ -89,6 +93,10 @@ public class BaseClass {
 
     public void setDriver(WebDriver webDriver){
         this.driver = driver;
+    }
+
+    public static ActionDriver getActionDriver(){
+        return actionDriver;
     }
 
     public static Properties getProp(){
