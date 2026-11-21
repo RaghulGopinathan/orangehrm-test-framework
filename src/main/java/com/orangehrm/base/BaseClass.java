@@ -26,21 +26,21 @@ public class BaseClass {
 
     @BeforeSuite
     public void loadConfig() throws IOException {
+        logger= LogManager.getLogger(BaseClass.class);
         //Initialize properties
         prop = new Properties();
         FileInputStream fileInputStream = new FileInputStream("src/main/resources/config.properties");
         prop.load(fileInputStream);
-        logger= LogManager.getLogger(BaseClass.class);
-        logger.info("Properties file Loaded");
+        logger.info("Properties file Loaded for "+this.getClass().getSimpleName());
     }
 
     @BeforeMethod
     public void setup() throws IOException {
-        logger.info("Webdriver setup for "+this.getClass().getSimpleName());
+        logger.info("Thread created for "+this.getClass().getSimpleName()+",Thread Id: "+Thread.currentThread().threadId());
         launchBrowser();
         configBrowser();
         staticWait(5);
-        logger.info("Setup completed..");
+        logger.info("Webdriver setup completed for "+this.getClass().getSimpleName());
     }
 
 
@@ -56,9 +56,8 @@ public class BaseClass {
         {
             driver.set(new EdgeDriver());
         }
-
         setActionDriver(new ActionDriver(getDriver()));
-        logger.info("Browser Launched..");
+        logger.info("Browser Launched for "+this.getClass().getSimpleName());
     }
 
     private void configBrowser(){
@@ -74,7 +73,8 @@ public class BaseClass {
             System.out.println(e.getMessage());
         }
         getActionDriver().waitForPageLoad(5);
-        logger.info("Browser configuration completed..");
+        logger.info("Browser Configuration complete for "+this.getClass().getSimpleName());
+
     }
 
     @AfterMethod
@@ -89,22 +89,15 @@ public class BaseClass {
                 System.out.println("Unable to quit driver: "+e.getMessage());
             }
         }
-        logger.info("Teardown started");
         driver.remove();
         actionDriver.remove();
+        logger.info("Teardown completed for "+this.getClass().getSimpleName());
     }
 
     public void staticWait(int seconds){
         LockSupport.parkNanos(TimeUnit.SECONDS.toNanos(seconds));
     }
 
-//    public static WebDriver getDriver(){
-//        return driver;
-//    }
-//
-//    public void setDriver(WebDriver webDriver){
-//        this.driver = driver;
-//    }
 
     public static ActionDriver getActionDriver(){
         return actionDriver.get();

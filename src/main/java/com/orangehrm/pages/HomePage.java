@@ -26,14 +26,12 @@ public class HomePage {
 
     //Action methods
     public boolean homePageHeader(){
-        System.out.println("Thread Id: "+Thread.currentThread().threadId());
         loginPage.login("admin","admin123");
         return actionDriver.isDisplayed(dashboardHeader);
     }
 
     public boolean logout(){
         try {
-            System.out.println("Thread Id: "+Thread.currentThread().threadId());
             loginPage.login("admin","admin123");
             actionDriver.click(profile);
             actionDriver.click(logoutBtn);

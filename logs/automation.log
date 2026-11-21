@@ -1,120 +1,21 @@
-2026-11-17 14:26:22 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded
-2026-11-17 14:26:31 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Page loaded successfully!
-2026-11-17 14:26:32 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Page loaded successfully!
-2026-11-17 14:26:32 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Page loaded successfully!
-2026-11-17 14:26:36 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 14:26:36 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 14:26:37 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 14:26:37 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 14:26:40 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 14:26:40 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 14:26:44 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Page loaded successfully!
-2026-11-17 14:26:47 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Page loaded successfully!
-2026-11-17 14:26:49 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 14:26:52 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 14:26:54 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 14:26:55 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:24:57 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded
-2026-11-17 15:25:07 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:25:08 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:25:11 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:25:12 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:25:13 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:25:13 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:25:16 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:25:17 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:25:21 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:25:22 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:25:25 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:25:27 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:25:30 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:25:33 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:25:33 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown completed..
-2026-11-17 15:28:22 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded
-2026-11-17 15:28:26 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 15:28:26 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 15:28:26 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 15:28:33 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:28:33 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 15:28:33 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:28:33 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 15:28:34 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:28:34 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 15:28:38 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:28:38 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:28:38 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 15:28:39 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:28:40 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 15:28:42 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 15:28:44 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 15:28:44 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 15:28:52 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:28:52 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 15:28:57 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:28:57 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 15:28:57 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 15:29:02 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 15:29:03 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 15:29:17 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:06:40 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded
-2026-11-17 16:06:40 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Webdriver setup for BasicTest
-2026-11-17 16:06:40 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup for LoginPageTest
-2026-11-17 16:06:40 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup for HomePageTest
-2026-11-17 16:06:47 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:06:47 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:06:47 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:06:53 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:06:53 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:06:55 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:06:55 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:06:57 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:06:57 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:06:58 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:07:00 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:07:02 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:07:02 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup for LoginPageTest
-2026-11-17 16:07:02 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:07:03 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:07:05 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:07:07 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:07:07 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup for HomePageTest
-2026-11-17 16:07:09 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:07:11 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:07:11 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:07:16 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:07:16 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:07:16 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:07:20 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:07:21 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:07:27 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:13:58 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded
-2026-11-17 16:13:58 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup for LoginPageTest
-2026-11-17 16:13:58 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Webdriver setup for BasicTest
-2026-11-17 16:13:58 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup for HomePageTest
-2026-11-17 16:14:06 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:14:06 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:14:06 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:14:15 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:14:15 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:14:16 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:14:16 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:14:20 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:14:20 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:14:20 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:14:21 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:14:25 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:14:26 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:14:26 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup for HomePageTest
-2026-11-17 16:14:26 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:14:26 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:14:26 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup for LoginPageTest
-2026-11-17 16:14:30 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:14:31 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched..
-2026-11-17 16:14:38 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:14:38 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:14:39 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.actiondriver.ActionDriver - Page loaded successfully!
-2026-11-17 16:14:39 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser configuration completed..
-2026-11-17 16:14:43 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:14:44 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Setup completed..
-2026-11-17 16:14:46 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown started
-2026-11-17 16:14:51 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown started
+2026-11-20 10:31:27 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded for BasicTest
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Thread created for BasicTest,Thread Id: 45
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Thread created for LoginPageTest,Thread Id: 47
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Thread created for HomePageTest,Thread Id: 46
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Thread created for LoginPageTest,Thread Id: 48
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched for LoginPageTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Browser Launched for LoginPageTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched for BasicTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched for HomePageTest
+2026-11-20 10:31:54 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for LoginPageTest
+2026-11-20 10:31:54 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for BasicTest
+2026-11-20 10:31:58 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for HomePageTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for LoginPageTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for BasicTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed for BasicTest
+2026-11-20 10:32:02 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Teardown completed for LoginPageTest
+2026-11-20 10:32:03 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for HomePageTest
+2026-11-20 10:32:04 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for LoginPageTest
+2026-11-20 10:32:06 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown completed for HomePageTest
+2026-11-20 10:32:09 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for LoginPageTest
+2026-11-20 10:32:09 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown completed for LoginPageTest

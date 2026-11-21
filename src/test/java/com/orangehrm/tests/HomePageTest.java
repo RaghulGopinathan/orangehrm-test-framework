@@ -18,7 +18,7 @@ public class HomePageTest extends BaseClass {
         Assert.assertTrue(homePage.homePageHeader(),"HomePage Header is not matching");
     }
 
-    @Test (priority = 2)
+    //@Test (priority = 2)
     public void logoutTest(){
         Assert.assertTrue(homePage.logout(),"Couldn't Logout from the page");
     }

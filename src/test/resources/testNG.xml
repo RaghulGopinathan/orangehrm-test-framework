@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<suite name ="OrangeHRMSuite" thread-count="3" parallel="classes">
+<suite name ="OrangeHRMSuite" thread-count="5" parallel="methods">
     <test name="OrangeHRMTest">
         <classes>
             <class name="com.orangehrm.tests.BasicTest"></class>
