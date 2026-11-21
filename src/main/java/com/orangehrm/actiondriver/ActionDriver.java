@@ -1,6 +1,7 @@
 package com.orangehrm.actiondriver;
 
 import com.orangehrm.base.BaseClass;
+import com.orangehrm.utilities.ExtentManager;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -28,15 +29,17 @@ public class ActionDriver{
 
     public void click(By by) {
         waitForElementToBeClickable(by);
+        logger.info("The element "+getElementDescription(by)+" is clicked.");
+        ExtentManager.logStep("The element "+getElementDescription(by)+" is clicked.");
         driver.findElement(by).click();
-        logger.info("Element clicked");
     }
 
     public void enterText(By by, String value) {
         waitForElementToBeVisible(by);
         driver.findElement(by).clear();
         driver.findElement(by).sendKeys(value);
-        logger.info("Text Entered");
+        logger.info("Entered Text for the element "+getElementDescription(by));
+        ExtentManager.logStep("Entered Text for the element "+getElementDescription(by));
     }
 
     public String getText(By by){
@@ -48,7 +51,8 @@ public class ActionDriver{
         try {
             waitForElementToBeVisible(by);
             String actualText=driver.findElement(by).getText();
-            logger.info("Text comparison complete");
+            logger.info("Text compared "+getElementDescription(by));
+            ExtentManager.logPass(driver,"CompareText","Test verified");
             return actualText.equals(expectedText);
         }
         catch (Exception e){
@@ -61,7 +65,9 @@ public class ActionDriver{
     public boolean isDisplayed(By by){
        try {
            waitForElementToBeVisible(by);
-           logger.info("Element Displayed");
+           logger.info("The element "+getElementDescription(by)+" is displayed");
+           ExtentManager.logStep("The element "+getElementDescription(by)+" is displayed");
+
            return driver.findElement(by).isDisplayed();
        }
        catch (Exception e)
@@ -109,5 +115,33 @@ public class ActionDriver{
         {
             logger.info("Page didn't load within "+timeOut+" seconds: "+e.getMessage());
         }
+    }
+
+    public String getElementDescription(By by)
+    {
+        WebElement webElement = driver.findElement(by);
+        String name = webElement.getDomAttribute("name");
+        String className = webElement.getDomAttribute("class");
+        String type = webElement.getDomAttribute("type");
+        String placeholder = webElement.getDomAttribute("placeholder");
+
+        if (isElementNotNull(name))
+            return name;
+        else if(isElementNotNull(type))
+            return className;
+        else if(isElementNotNull(placeholder))
+            return type;
+        else if (isElementNotNull(className))
+            return placeholder;
+        else
+            return "";
+
+    }
+
+    public boolean isElementNotNull(String element){
+        if(element != null && !element.isEmpty())
+            return true;
+        else
+            return false;
     }
 }
