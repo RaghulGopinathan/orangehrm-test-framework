@@ -1,6 +1,8 @@
 package com.orangehrm.actiondriver;
 
-import com.orangehrm.base.BasePage;
+import com.orangehrm.base.BaseClass;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,14 +12,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class ActionDriver extends BasePage {
+public class ActionDriver{
 
-    private static WebDriver driver;
+    private WebDriver driver;
     private WebDriverWait wait;
+    private static Logger logger;
 
-    public ActionDriver() {
-        driver = getDriver();
-        int explicitWait = Integer.parseInt(prop.getProperty("explicit.wait"));
+    public ActionDriver(WebDriver driver) {
+        logger = BaseClass.logger;
+        this.driver = driver;
+        int explicitWait = Integer.parseInt(BaseClass.getProp().getProperty("explicit.wait"));
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWait)); //configuring wait object, The timer will start when I use until method, Here
         //the max wait time is 10s. This is of no use without the until method
     }
@@ -25,12 +29,14 @@ public class ActionDriver extends BasePage {
     public void click(By by) {
         waitForElementToBeClickable(by);
         driver.findElement(by).click();
+        logger.info("Element clicked");
     }
 
     public void enterText(By by, String value) {
         waitForElementToBeVisible(by);
         driver.findElement(by).clear();
         driver.findElement(by).sendKeys(value);
+        logger.info("Text Entered");
     }
 
     public String getText(By by){
@@ -38,16 +44,38 @@ public class ActionDriver extends BasePage {
         return driver.findElement(by).getText();
     }
 
-    public String compareText(By by){
-        waitForElementToBeVisible(by);
-        return driver.findElement(by).getText();
+    public boolean compareText(By by, String expectedText){
+        try {
+            waitForElementToBeVisible(by);
+            String actualText=driver.findElement(by).getText();
+            logger.info("Text comparison complete");
+            return actualText.equals(expectedText);
+        }
+        catch (Exception e){
+            logger.error("Unable to compare texts: "+e.getMessage());
+            return false;
+        }
+
+    }
+
+    public boolean isDisplayed(By by){
+       try {
+           waitForElementToBeVisible(by);
+           logger.info("Element Displayed");
+           return driver.findElement(by).isDisplayed();
+       }
+       catch (Exception e)
+       {
+           logger.error("Unable to check whether the element is displayed: "+e.getMessage());
+           return false;
+       }
     }
 
     public void waitForElementToBeClickable(By by) {
         try {
-            wait.until(ExpectedConditions.elementToBeClickable(by)); //It waits maximum of 30 sec until the element becomes clickable else it throws timeout exception
+            wait.until(ExpectedConditions.elementToBeClickable(by)); //It waits maximum of 10 sec until the element becomes clickable else it throws timeout exception
         } catch (Exception e) {
-            System.out.println("Unable to click the element: " + e.getMessage());
+            logger.error("Unable to click the element: " + e.getMessage());
         }
     }
 
@@ -55,7 +83,7 @@ public class ActionDriver extends BasePage {
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(by));
         } catch (Exception e) {
-            System.out.println("Element is not visible: " + e.getMessage());
+            logger.error("Element is not visible: " + e.getMessage());
         }
     }
 
@@ -67,7 +95,7 @@ public class ActionDriver extends BasePage {
             js.executeScript("arguments[0].scrollIntoView(true)",element);
         }
         catch (Exception e){
-            System.out.println("Unable to scroll to element: "+e.getMessage());
+            logger.error("Unable to scroll to element: "+e.getMessage());
         }
     }
 
@@ -76,12 +104,10 @@ public class ActionDriver extends BasePage {
             //wait.withTimeout() - Setting the maximum waiting time on your stopwatch. Earlier it will be the value of dynamicwait
             wait.withTimeout(Duration.ofSeconds(timeOut)).until(WebDriver -> ((JavascriptExecutor) WebDriver)
                     .executeScript("return document.readyState").equals("complete"));
-
-            System.out.println("Page loaded successfully!");
         }
         catch (Exception e)
         {
-            System.out.println("Page didn't load within "+timeOut+" seconds: "+e.getMessage());
+            logger.info("Page didn't load within "+timeOut+" seconds: "+e.getMessage());
         }
     }
 }

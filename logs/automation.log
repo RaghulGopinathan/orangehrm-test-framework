@@ -1,0 +1,21 @@
+2026-11-20 10:31:27 [main] INFO  com.orangehrm.base.BaseClass - Properties file Loaded for BasicTest
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Thread created for BasicTest,Thread Id: 45
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Thread created for LoginPageTest,Thread Id: 47
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Thread created for HomePageTest,Thread Id: 46
+2026-11-20 10:31:27 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Thread created for LoginPageTest,Thread Id: 48
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Launched for LoginPageTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Browser Launched for LoginPageTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Launched for BasicTest
+2026-11-20 10:31:36 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Launched for HomePageTest
+2026-11-20 10:31:54 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for LoginPageTest
+2026-11-20 10:31:54 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for BasicTest
+2026-11-20 10:31:58 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for HomePageTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for LoginPageTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for BasicTest
+2026-11-20 10:31:59 [TestNG-test-OrangeHRMTest-1] INFO  com.orangehrm.base.BaseClass - Teardown completed for BasicTest
+2026-11-20 10:32:02 [TestNG-test-OrangeHRMTest-4] INFO  com.orangehrm.base.BaseClass - Teardown completed for LoginPageTest
+2026-11-20 10:32:03 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for HomePageTest
+2026-11-20 10:32:04 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Browser Configuration complete for LoginPageTest
+2026-11-20 10:32:06 [TestNG-test-OrangeHRMTest-2] INFO  com.orangehrm.base.BaseClass - Teardown completed for HomePageTest
+2026-11-20 10:32:09 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Webdriver setup completed for LoginPageTest
+2026-11-20 10:32:09 [TestNG-test-OrangeHRMTest-3] INFO  com.orangehrm.base.BaseClass - Teardown completed for LoginPageTest
